@@ -1,0 +1,9 @@
+version: '3'
+services:
+  yaroze:
+    build: .
+    entrypoint: /usr/bin/bash
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./source:/root/mipsel-ecoff-toolchain/yaroze/mipsel-ecoff/source:consistent
