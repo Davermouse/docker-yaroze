@@ -1,0 +1,6 @@
+[submodule "mipsel-ecoff-toolchain"]
+	path = mipsel-ecoff-toolchain
+	url = https://github.com/ChrisRx/mipsel-ecoff-toolchain.git
+[submodule "bin2h"]
+	path = bin2h
+	url = https://github.com/elnormous/bin2h.git
