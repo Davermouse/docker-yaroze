@@ -14,6 +14,9 @@ RUN ./mipsel-ecoff-toolchain
 WORKDIR /root/bin2h
 RUN make && cp /root/bin2h/bin2h /root/mipsel-ecoff-toolchain/yaroze/mipsel-ecoff/bin
 
+COPY bash_profile.sh /root/bash_profile
+RUN cat /root/bash_profile >> /root/.bashrc
+
 WORKDIR /root/mipsel-ecoff-toolchain/yaroze/mipsel-ecoff/
 
 ENTRYPOINT [  ]
